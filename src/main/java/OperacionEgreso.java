@@ -41,11 +41,13 @@ public class OperacionEgreso {
     }
 
     public void setEstaCerrada(boolean estaCerrada) {
-        this.estaCerrada = estaCerrada;
 
         // sirve para actualizar los precios al momento de cerrar la operacion
-        if (this.estaCerrada) {
+        if (estaCerrada) {
             this.montoFinal = this.calcularMonto();
         }
+
+        this.estaCerrada = estaCerrada;
     }
+
 }

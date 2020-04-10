@@ -1,6 +1,6 @@
 
 public class Item {
-    private boolean esArticulo;
+    private boolean esArticulo;  // Si escala y ya tienen comportamiento propio podrían ser clases distintas y no un atributo
     private double valor;
 
     public Item(boolean esArticulo, double valor){
